@@ -8,11 +8,7 @@ branches:
 notifications:
   email:
     recipients:
-    - j.bernal@upm.es
-services:
-- mysql
-before_install:
-- mysql -e 'CREATE DATABASE IF NOT EXISTS forge;'
+    - m.puchades@gmail.com
 script:
 - mvn verify
 - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
